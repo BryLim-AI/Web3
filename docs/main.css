@@ -1,0 +1,143 @@
+body{
+    background-color: #040D12;
+    color:#F5E8C7;
+}
+
+.page1,
+.page2{
+    height:650px;
+}
+
+.page1 > h1{
+    font-size: 180px;
+    text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+}
+
+.page1 > h3{
+    font-size: 60px;
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page1 > h5{
+    background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+    border: 0;
+    color: rgba(var(--text-color));
+    padding:5px;
+    border-radius: 5px;
+}
+
+.page1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2 > h3{
+    padding:20px;
+    font-size: 38px;
+}
+
+.page2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    gap:10px;
+}
+.glassContainer{
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    overflow-y:scroll;
+    width:90%;
+    height:500px;
+    gap:15px;
+    display: flex;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.glassContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.glassItem{
+    width:100px;
+    display: flex;
+    flex-direction: column;
+}
+.glassItem:hover{
+    z-index: 99;
+}
+.cardContainer > p{
+    font-size: 20px;
+}
+.cardContainer{
+    display: flex;
+    color:#3A4D39;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    width:150px;
+    height:100px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    box-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+}
+
+.btn{
+    width:100%;
+   
+}
+
+@media screen and (min-width: 1900px) {
+    /* Your CSS rules for 27-inch screens go here */
+    
+    .page1,
+    .page2{
+        height:1000px;
+    }
+
+    .page1 > h1{
+        font-size: 200px;
+        
+    }
+
+    .page1 > h3{
+        font-size: 80px;
+    }
+
+    .page2 > h3{
+        font-size: 58px;
+    }
+
+    .cardContainer{
+        display: flex;
+        align-content: center;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        gap:100px;
+        width:150px;
+        height:150px;
+      
+    }
+    .btn{
+        width:100%;
+       
+    }
+
+  }
+  
