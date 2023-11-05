@@ -4,7 +4,7 @@ body{
 }
 
 .page1,
-.page2{
+.page2,.page3{
     height:650px;
 }
 
@@ -49,6 +49,20 @@ body{
     align-items: center;
     gap:10px;
 }
+.page2 > h3{
+    font-size: 60px;
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.page3 > h3{
+    font-size: 50px;
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding:20px;
+}
 .glassContainer{
     background: rgba( 255, 255, 255, 0 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -65,6 +79,7 @@ body{
     align-self: center;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .glassContainer::-webkit-scrollbar{
@@ -78,6 +93,7 @@ body{
 }
 .glassItem:hover{
     z-index: 99;
+    
 }
 .cardContainer > p{
     font-size: 20px;
@@ -101,12 +117,77 @@ body{
     width:100%;
    
 }
+.cardContainer:hover{
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 8px;
+    border: 4px solid transparent;
+}
+/* -------------------- Pages -----------------------*/
+nav > a{
+    font-size: 40px;
+    color:#F5E8C7;
+    text-decoration: none;
+    text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+}
+ a > h1{
+    padding:10px;
+ }
 
+ a > h1:hover{
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+
+nav > a:hover{
+    color:#F5E8C7;
+    text-decoration: none;
+}
+
+.pageTitles{
+    padding:5px;
+    text-align: center;
+    font-size: 48px;
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.itemContainer{
+    margin-top: 1%;
+    height:500px;
+    border: none;
+    display: flex;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+   
+}
+.innerItemContainer{
+    border: none;
+    flex-wrap: wrap;justify-content: center;
+    display: flex; gap:30px;
+}
+.itemContainer::-webkit-scrollbar{
+    display: none;
+}
+.innerItemContainer > a:hover{
+    z-index: 99;
+}
+.itemImg{
+    width:120px;
+    height:80px;
+    border-radius: 8px;
+    object-fit:contain;
+}
 @media screen and (min-width: 1900px) {
     /* Your CSS rules for 27-inch screens go here */
     
     .page1,
-    .page2{
+    .page2,.page3{
         height:1000px;
     }
 
@@ -137,6 +218,15 @@ body{
     .btn{
         width:100%;
        
+    }
+    .itemImg{
+        width:120px;
+        height:100px;
+        border-radius: 8px;
+    }
+    .itemContainer{
+        height:800px;
+    
     }
 
   }
