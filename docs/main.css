@@ -164,7 +164,11 @@ nav > a:hover{
     align-items: center;
     flex-wrap: wrap;
     overflow-y: scroll;
+    justify-content: center;
    
+}
+.itemContainer > a:hover{
+    z-index: 99;
 }
 .innerItemContainer{
     border: none;
