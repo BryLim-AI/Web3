@@ -4,7 +4,7 @@ body{
 }
 
 .page1,
-.page2,.page3{
+.page2,.page3, .page4{
     height:650px;
 }
 
@@ -63,6 +63,14 @@ body{
     text-align: center;
     padding:20px;
 }
+.page4 >h3{
+    font-size: 50px;
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding:20px;
+}
 .glassContainer{
     background: rgba( 255, 255, 255, 0 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -112,6 +120,29 @@ body{
     border-radius: 8px;
     box-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
 }
+
+.otherApps{
+    width:150px;
+    height:150px;
+}
+
+.otherApps:hover{
+    width:180px;
+    height:180px;
+}
+
+.itemImg2{
+    width:130px;
+    height:130px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.itemImg2:hover{
+    width:160px;
+    height:160px;
+}
+
 
 .btn{
     width:100%;
@@ -191,7 +222,9 @@ nav > a:hover{
     /* Your CSS rules for 27-inch screens go here */
     
     .page1,
-    .page2,.page3{
+    .page2,
+    .page3,
+    .page4{
         height:1000px;
     }
 
