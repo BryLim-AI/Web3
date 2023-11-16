@@ -1,6 +1,7 @@
 body{
     background-color: #040D12;
     color:#F5E8C7;
+    
 }
 
 .page1,
@@ -187,17 +188,18 @@ nav > a:hover{
 
 .itemContainer{
     margin-top: 1%;
-    height:500px;
-    border: none;
+    height:600px;
     display: flex;
     align-content: center;
     align-self: center;
     align-items: center;
     flex-wrap: wrap;
     overflow-y: scroll;
+    
     justify-content: center;
    
 }
+
 .itemContainer > a:hover{
     z-index: 99;
 }
@@ -263,6 +265,11 @@ nav > a:hover{
     }
     .itemContainer{
         height:800px;
+        width:100%;
+        display: flex;
+        align-content: center;
+        align-self: center;
+        align-items: center;
     
     }
 
